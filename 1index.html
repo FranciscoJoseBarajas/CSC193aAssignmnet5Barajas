@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+        <!-- link to your script file here -->
+		<script src="fancifymytext.js"></script>
+	</head>
+	<body>
+		<h1>Fancify my Text</h1>
+		<!-- Your UI controls go here -->
+		<fieldset>
+			<legend>Text</legend>
+            <!--A field for users to enter large (multi-line) amounts of text.
+            It should be 4 rows by 30 columns in size.-->
+			<textarea id="textBox" rows="4" cols="30"></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Fancify</legend>
+            <!--Add a second bordered field set box labeled "Fancify" that contains 
+            the following controls: A button labeled: Bigger! Two radio buttons 
+            labeled "FancyShmancy" and "BoringBetty" -->
+			<button onclick="makeBigger()">Bigger!</button>
+			<br><br>
+            <!--Ok i hate copying what you said heres FancyShamncy -->
+			<input type="radio" id="fancy" name="style" onchange="changeStyle()">
+			<label for="fancy">FancyShmancy</label>
+			<br>
+            <!--Heres BoringBetty -->
+			<input type="radio" id="boring" name="style" onchange="changeStyle()">
+			<label for="boring">BoringBetty</label>
+			<br><br>
+            <!--Moo to upper case things-->
+			<button onclick="mooText()">Moo</button>
+		</fieldset>
+	</body>
+</html>
